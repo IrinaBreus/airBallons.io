@@ -1,0 +1,70 @@
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99%), url('../img/header_bg.jpg') center / cover no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+    &__logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 56px;
+        height: 70px;
+    }
+    &__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        span {
+            display: block;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 10px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        animation: leftToRight 2s .3s ease-in-out both;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 5px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+        animation: rightToLeft 2s .3s ease-in-out both;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    80% {
+        transform: translate(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80% {
+        transform: translate(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
