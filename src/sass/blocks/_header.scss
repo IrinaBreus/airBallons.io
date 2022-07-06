@@ -1,14 +1,18 @@
 .header {
     position: relative;
     height: 95vh;
-    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99%), url('../img/header_bg.jpg') center / cover no-repeat;
+    background: linear-gradient(90deg, rgba($brown-light, 0.7) 0.03%, rgba($black, 0.7) 99%), url('../img/header_bg.jpg') center / cover no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
     &__logo {
         position: absolute;
-        top: 50px;
-        left: 50px;
-        width: 56px;
-        height: 70px;
+        top: 5rem;
+        left: 5rem;
+        width: 5.6rem;
+        height: 7rem;
+        animation: flight 2s infinite alternate ease-in-out;
+        &:hover {
+            animation-play-state: paused;
+        }
     }
     &__box {
         position: absolute;
@@ -23,31 +27,31 @@
     }
     &__title {
         font-weight: 800;
-        font-size: 50px;
-        line-height: 60px;
-        letter-spacing: 10px;
-        color: #FFFFFF;
-        margin-bottom: 30px;
-        animation: leftToRight 2s .3s ease-in-out both;
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: $white;
+        margin-bottom: 3rem;
+        animation: leftToRight 2s .3s ease-in-out backwards;
     }
     &__descr {
         font-weight: 300;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: 5px;
-        color: #FFFFFF;
-        margin-bottom: 50px;
-        animation: rightToLeft 2s .3s ease-in-out both;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: .5rem;
+        color: $white;
+        margin-bottom: 5rem;
+        animation: rightToLeft 2s .3s ease-in-out backwards;
     }
 }
 
 @keyframes leftToRight {
     0% {
         opacity: 0;
-        transform: translate(-100px);
+        transform: translate(-10rem);
     }
     80% {
-        transform: translate(10px);
+        transform: translate(1rem);
     }
     100% {
         opacity: 1;
@@ -58,13 +62,22 @@
 @keyframes rightToLeft {
     0% {
         opacity: 0;
-        transform: translate(100px);
+        transform: translate(10rem);
     }
     80% {
-        transform: translate(-10px);
+        transform: translate(-1rem);
     }
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes flight {
+    0% {
+        transform: translateY(-2rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

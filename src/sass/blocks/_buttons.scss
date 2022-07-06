@@ -1,21 +1,56 @@
 .btn {
-    display: inline-block;
+    position: relative;
+    @include style-link($gray);
     margin: 0 auto;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: #777777;
-    background: #fff;
-    border-radius: 50px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .5rem;
+    background: $white;
+    border-radius: 5rem;
     transition: all .2s;
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        transform: translateY(-.4rem);
+        box-shadow: $box-shadow;
+        &::after {
+            transform: scale(1.4, 1.8);
+            opacity: 0;
+        }
     }
     &:active {
-        transform: translateY(-2px);
+        transform: translateY(-.2rem);
+        box-shadow: inset $box-shadow;
+        color: #403f5c;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background: $white;
+        border-radius: 5rem;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .3s;
+    }
+    &__first {
+        animation: btnToUp 2s .3s ease-out backwards;
+    }
+}
+
+@keyframes btnToUp {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    80% {
+        transform: translateY(-.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
