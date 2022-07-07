@@ -1,4 +1,6 @@
 @import 'base/*.scss';
+@import 'libs/*.scss';
+
 
 * {
     margin: 0;
@@ -14,7 +16,7 @@ html {
 body {
     font-weight: 400;
     color: $gray;
-    font-size: 1,6rem;
+    font-size: 1.6rem;
     line-height: 140%;
     letter-spacing: .2rem;
     padding: 5rem;
@@ -24,5 +26,5 @@ body {
     background: $gray-light;
 }
 
-
+@import 'components/*.scss';
 @import 'blocks/*.scss';

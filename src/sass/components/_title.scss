@@ -1,0 +1,21 @@
+.title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    transition: all .4s;
+    margin-bottom: 80px;
+    &:hover {
+        text-shadow: 0 .4rem .4rem rgba($black, 25%);
+        transform: scale(1.02);
+    }
+    &_main {
+        background: linear-gradient(90deg, $brown-light 3.65%, $brown-dark 100%);
+        background-clip: text;
+        color: transparent;
+        backface-visibility: hidden;
+        
+    }
+}
