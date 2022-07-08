@@ -7,4 +7,14 @@
         color: $gray;
         margin-bottom: 10px;
     }
+    .txt {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        letter-spacing: .2rem;
+        color: #777777;
+        &_ls1 {
+            letter-spacing: .1rem;
+        }
+    }
 }
