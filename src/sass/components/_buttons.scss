@@ -36,7 +36,13 @@
         z-index: -1;
         transition: all .3s;
     }
-    &__first {
+    &_big {
         animation: btnToUp 2s .3s ease-out backwards;
+    }
+    &_litle {
+        padding: 1.5rem 2.1rem;
+    }
+    &_center {
+        margin: 0 auto;
     }
 }
