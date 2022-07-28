@@ -11,11 +11,13 @@
         text-shadow: 0 .4rem .4rem rgba($black, 25%);
         transform: scale(1.02);
     }
+    &_white {
+        color: $white;
+    }
     &_main {
         background: linear-gradient(90deg, $brown-light 3.65%, $brown-dark 100%);
         background-clip: text;
         color: transparent;
         backface-visibility: hidden;
-        
     }
 }

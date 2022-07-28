@@ -82,7 +82,7 @@
 
             <section class="tours">
                 <div class="container">
-                    <h3 class="title">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h3>
+                    <h2 class="title">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
                     <div class="tours__wrapper">
                         <div class="tours-card">
                             <div class="tours-card__said tours-card__said_front">
@@ -156,6 +156,79 @@
                     </div>
                     <div class="tours__btn">
                         <a href="#" class="btn btn_litle">ЗАБРОНИРОВАТЬ</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comments">
+                <div class="gradient-bg"></div>
+                <video class="video-bg" autoplay muted loop>
+                    <source src="img/video/balloons_1.mp4">
+                    <source src="img/video/balloons_2.webm">
+                </video>
+                <div class="container">
+                    <h2 class="title title_white">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+                    <div class="comments__wrapper">
+                        <div class="comments-block">
+                            <figure class="comments-block__img">
+                                <img src="img/comments/man.jpg" alt="Антон Рябин">
+                                <figcaption class="comments-block__name">Антон Рябин</figcaption>
+                            </figure>
+                            <div class="comments-block__txt">
+                                <h4 class="comments-block__subtitle">Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ</h4>
+                                <p class="comments-block__descr">Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.</p>
+                            </div>
+                        </div>
+                        <div class="comments-block">
+                            <figure class="comments-block__img">
+                                <img src="img/comments/woman.jpg" alt="Лиза Фролова">
+                                <figcaption class="comments-block__name">Лиза Фролова</figcaption>
+                            </figure>
+                            <div class="comments-block__txt">
+                                <h4 class="comments-block__subtitle">ЭТО БЫЛО ВЕЛИКОЛЕПНО И НЕЗАБЫВАЕМО</h4>
+                                <p class="comments-block__descr">Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__btn">
+                        <a href="#" class="btn btn_litle">ЗАБРОНИРОВАТЬ</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reservation">
+                <div class="container">
+                    <div class="reservation-form">
+                        <form action="#" class="form">
+                            <h2 class="title title_main form__title">ЗАБРОНИРОВАТЬ ТУР</h2>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
+                                <label for="name" class="form__label">Ваше имя и фамилия</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Почтовый адрес" id="email" required>
+                                <label for="email" class="form__label">Ваш e-mail</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio">
+                                    <input type="radio" class="form__radio-input" name="tours" id="tours-group">
+                                    <label for="tours-group" class="form__radio-label">
+                                        <span class="form__radio-btn"></span>
+                                        Групповой тур
+                                    </label>
+                                </div>
+                                <div class="form__radio">
+                                    <input type="radio" class="form__radio-input" name="tours" id="tours-personal">
+                                    <label for="tours-personal" class="form__radio-label">
+                                        <span class="form__radio-btn"></span>
+                                        Индивидуальный тур
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn form__button">ЗАБРОНИРОВАТЬ</button>
+                        </form>
                     </div>
                 </div>
             </section>
