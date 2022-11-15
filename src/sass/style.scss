@@ -1,30 +1,21 @@
-@import 'base/*.scss';
-@import 'libs/*.scss';
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-html {
-    font-size: 62.5%;
 }
 
 body {
+    font-family: 'Roboto' sans-serif;
     font-weight: 400;
-    color: $gray;
-    font-size: 1.6rem;
-    line-height: 140%;
-    letter-spacing: .2rem;
-    padding: 5rem;
-    background-color: $white;
-}
-.main_bg {
-    background: $gray-light;
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 50px;
+    background: #FFFFFF;
 }
 
-@import 'components/*.scss';
-@import 'blocks/*.scss';
+.container {
+    background: #F7F7F7;
+    height: auto;
+    width: 100%;
+}
