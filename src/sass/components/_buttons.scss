@@ -1,13 +1,13 @@
 .btn {
     position: relative;
     display: inline-block;
-    background: white;
-    padding: 15px 40px;
-    border-radius: 50px;
+    background: var(--white);
+    padding: 1.5rem 4rem;
+    border-radius: 5rem;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .5rem;
     text-decoration: none;
     border: transparent;
     cursor: pointer;
@@ -19,10 +19,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: white;
+        background: var(--white);
         width: 100%;
         height: 100%;
-        border-radius: 50px;
+        border-radius: 5rem;
         display: inline-block;
         z-index: -1;
         transition: all .4s;
@@ -30,7 +30,7 @@
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, .5);
+        box-shadow: var(--shadow);
         &::after {
             opacity: 0;
             transform: scale(1.2, 1.5);
@@ -38,20 +38,45 @@
     }
     &:active {
         transform: translateY(1px);
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, .5);
+        box-shadow: var(--shadow-inset);
     }
     &_white {
-        background: #FFFFFF;
-        color: #777777;
+        background: var(--white);
+        color: var(--gray);
         &:hover {
             color: #656464;
         }
     }
     &_brown {
-        background: #BA8554;
+        background: var(--brown-light);
         color: white;
         &:hover {
             background: #a17348;
         }
+    }
+}
+
+.btn__text {
+    display: inline-block;
+    width: max-content;
+    padding: 1.5rem 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: var(--gray);
+    border-radius: 0;
+    border-bottom: 1px solid var(--brown);
+    text-decoration: none;
+    transition: all 1s;
+    span {
+        margin: 0 5px;
+    }
+    &:hover {
+        color: var(--white);
+        background: var(--brown);
+        border-radius: 5px;
+        box-shadow: var(--shadow);
+        transform: translate(2px, 2px);
     }
 }

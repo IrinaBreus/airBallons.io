@@ -1,0 +1,46 @@
+.about {
+    padding: 8rem 10rem 5.4rem 10rem;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, 1fr);
+        gap: 3rem 6rem;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        letter-spacing: .2rem;
+    }
+    &__img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        position: relative;
+        img {
+            border-radius: .5rem;
+            position: absolute;
+            transition: all 1s;
+        }
+        img:hover{
+            z-index: 40;
+            transform: scale(1.1);
+            outline: 1rem solid var(--brown);
+            outline-offset: 1rem;
+        }
+        
+        &_1 {
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        &_2 {
+            top: 18%;
+            right: 0;
+            z-index: 20;
+        }
+        &_3 {
+            bottom: 0;
+            left: 2.2rem;
+            z-index: 30;
+        }
+    }
+}
