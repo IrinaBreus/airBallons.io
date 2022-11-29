@@ -1,0 +1,71 @@
+.adventure {
+    padding: 216px 0;
+    background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%), url('../../img/third_bg.jpg') center center / cover no-repeat;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    &__wrapper {
+        padding: 0 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-flow: row;
+        gap: 60px;
+    }
+    &__cart {
+        width: 100%;
+        height: auto;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        padding: 25px;
+        &-icon {
+            width: max-content;
+            margin: 0 auto;
+            font-size: 60px;
+            background: var(--gradient-brown);
+            background-clip: text;
+            color: transparent;
+            backface-visibility: hidden;
+            margin-bottom: 24px;
+        }
+        &-txt {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 2px
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .adventure {
+        &__wrapper {
+            padding: 0 50px;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .adventure {
+        padding: 100px 0;
+        clip-path:none;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .adventure {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .adventure {
+        &__wrapper {
+            padding: 0;
+        }
+    }
+}
