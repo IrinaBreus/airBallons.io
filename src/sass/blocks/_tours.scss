@@ -1,0 +1,168 @@
+.tours {
+    padding: 80px 100px 85px 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    &-cart {
+        width: 340px;
+        min-height: 520px;
+        perspective: 1500px;
+        position: relative;
+        margin: 10px;
+        &__side {
+            width: 100%;
+            min-height: 520px;
+            color: white;
+            text-align: center;
+            transition: all .7s ease-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            &_front {
+                position: relative;
+            }
+            &_back {
+                background: var(--gradient-brown);
+                transform: rotateY(180deg);
+                padding: 100px 0;
+                margin: 0 auto;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 245px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+            border-radius: 5px;
+            margin-bottom: 45px;
+            &_1 {
+                background: url('../img/popular/group.jpg') center center / cover no-repeat;
+            }
+            &_2 {
+                background: url('../img/popular/privat.jpg') center center / cover no-repeat;
+            }
+            &_3 {
+                background: url('../img/popular/viewpoint.jpg') center center / cover no-repeat ;
+            }
+        }
+        &__title {
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: right;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            &_top {
+                display: block;
+                background: var(--gradient-brown);
+                padding: 11px 15px 3px 15px;
+                position: absolute;
+                top: 170px;
+                right: 0;
+            }
+            &_btm {
+                display: block;
+                background: var(--gradient-brown);
+                padding: 3px 15px 11px 15px;
+                position: absolute;
+                top: 213px;
+                right: 0;
+            }
+        }
+        &__descr {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: var(--gray);
+            li {
+                width: max-content;
+                border-bottom: 1px solid var(--gray);
+                margin: 0 auto;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+        &__price {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            margin-bottom: 87px;
+        }
+        &__value {
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: 2px;
+            margin-bottom: 87px;
+        }
+
+        &:hover &__side_front {
+            transform: rotateY(-180deg);
+        }
+
+        &:hover &__side_back {
+            transform: rotateY(0deg);
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .tours {
+        padding: 80px 50px 85px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tours {
+        padding: 70px 40px 75px 40px;
+        &__wrapper {
+            margin-bottom: 60px;
+        }
+        &-cart {
+            perspective: none;
+            &__side {
+                transition: none;
+                &_back {
+                    display: none;
+                }
+            }
+    
+            &__title {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 34px;
+                text-align: right;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+            }
+    
+            &:hover &__side_front {
+                transform: inherit;
+            }
+    
+            &:hover &__side_back {
+                transform: inherit;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .tours {
+        padding: 50px 0;
+    }
+}

@@ -15,6 +15,11 @@
         background: rgba(255, 255, 255, 0.8);
         border-radius: 5px;
         padding: 25px;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow);
+        }
         &-icon {
             width: max-content;
             margin: 0 auto;
@@ -46,7 +51,7 @@
 
 @media (max-width: 1200px) {
     .adventure {
-        padding: 100px 0;
+        padding: 100px 10px;
         clip-path:none;
         &__wrapper {
             grid-template-columns: repeat(2, 1fr);
@@ -59,6 +64,10 @@
         &__wrapper {
             grid-template-columns: 1fr;
         }
+        &__cart:hover {
+            transform: scale(1);
+            box-shadow: none;
+        }
     }
 }
 
@@ -66,6 +75,9 @@
     .adventure {
         &__wrapper {
             padding: 0;
+        }
+        &__cart {
+            padding: 10px;
         }
     }
 }
