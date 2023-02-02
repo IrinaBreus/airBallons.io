@@ -24,14 +24,7 @@
             color: #656464;
         }
     }
-    &_brown {
-        background: var(--brown-light);
-        color: white;
-        &:hover {
-            background: #a17348;
-        }
-    }
-
+    
     &::after {
         content: "";
         position: absolute;
@@ -45,7 +38,7 @@
         z-index: -1;
         transition: all .4s;
     }
-
+    
     &:hover {
         transform: translateY(-3px);
         box-shadow: var(--shadow);
@@ -60,6 +53,27 @@
     }
 }
 
+.btn_brown {
+    background: var(--brown-light);
+    color: var(--white);
+    margin-left: 0;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+        display: inline-block;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &:hover {
+        background: var(--brown);
+    }
+}
 .btn__text {
     display: inline-block;
     width: max-content;

@@ -90,7 +90,7 @@
             </section> 
             
             <section class="tours">
-                <h2 class="title title_grad">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
+                <h2 class="title title_grad mb80">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
                 <div class="tours__wrapper">
                     <div class="tours-cart">
                         <div class="tours-cart__side tours-cart__side_front">
@@ -179,7 +179,7 @@
             <source src="img/video/balloons_1.mp4">
             <source src="img/video/balloons_2.webm">
         </video>
-        <h2 class="title title_white">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+        <h2 class="title title_white mb80">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
         <div class="feedBack__wrapper">
             <div class="feedBack-cart">
                 <figure class="feedBack-cart__img">
@@ -207,6 +207,41 @@
                 </div>
             </div>
             <button class="btn btn_white">ЗАБРОНИРОВАТЬ</button>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="book__wrapper">
+            <div class="book__form">
+                <h2 class="title title_grad mb30 book__title">ЗАБРОНИРОВАТЬ ТУР</h2>
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Имя Фамилия" required id="name">
+                        <label for="name" class="form__label">Имя и фамилия</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Почтовый адрес" required id="email">
+                        <label for="email" class="form__label">Почтовый адрес</label>
+                    </div>
+                    <div class="form__radio">
+                        <div class="form__radio_group">
+                            <input type="radio" class="form__radio_input" id="tour-1" name="tour">
+                            <label for="tour-1" class="form__radio_label">
+                                <span class="form__radio_btn"></span>
+                                Групповой тур
+                            </label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input type="radio" class="form__radio_input" id="tour-2" name="tour">
+                            <label for="tour-2" class="form__radio_label">
+                                <span class="form__radio_btn"></span>
+                                Индивидуальный тур
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn_brown">ЗАБРОНИРОВАТЬ</button>
+                </form>
+            </div>
         </div>
     </section>
 

@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    const links = document.querySelectorAll(\".hamburger__list\"),\r\n          toggle = document.querySelector('.hamburger__toggle');\r\n\r\n    links.forEach(item => {\r\n        item.addEventListener('click', () => {\r\n            toggle.checked = false;\r\n        })\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
 
 /***/ })
 

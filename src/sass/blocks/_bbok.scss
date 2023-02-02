@@ -1,0 +1,17 @@
+.book {
+    background: var(--gradient-brown);
+    padding: 100px;
+    &__title {
+        text-align: left; 
+    }
+    &__wrapper {
+        background: linear-gradient(120deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 54%, rgba(195,149,106,0.1) 42%), url('../img/form_bg.jpg') center center/cover no-repeat;
+    }
+    &__form {
+        width: 60%;
+        padding: 50px;
+    }
+}
+
+
+// 3.22

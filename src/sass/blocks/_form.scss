@@ -1,0 +1,83 @@
+.form {
+    &__group {
+        margin-bottom: 40px;
+    }
+    &__input {
+        width: 55%;
+        height: 55px;
+        background: var(--white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: var(--black);
+        padding: 18px 22px;
+        
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid #66D763;
+            box-shadow: var(--shadow);
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid #D76363;
+        }
+    }
+    &__label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: var(--gray);
+        display: block;
+        margin-top: 10px;
+        margin-left: 15px;
+        transition: all .7s;
+    }
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility:hidden;
+        transform: translateY(-20px);
+    }
+
+    &__radio {
+        width: 55%;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        &_label {
+            position: relative;
+            margin-left: 50px;
+        }
+        &_btn {
+            width: 30px;
+            height: 30px;
+            border: 4px solid var(--brown-light);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -4px;
+            left: -50px;
+            &::after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background: var(--brown-light);
+                border-radius: 50%;
+                opacity: 0;
+                transition: all .2s;
+            }
+        }
+        &_input:checked ~ &_label &_btn::after {
+            opacity: 1;
+        }
+        &_input {
+            display: none;
+        }
+    }
+}
