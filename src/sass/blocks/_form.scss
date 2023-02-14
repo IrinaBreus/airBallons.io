@@ -44,10 +44,14 @@
     }
 
     &__radio {
-        width: 55%;
+        width: 75%;
         display: flex;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
         justify-content: space-between;
+        &_group {
+            margin-bottom: 20px;
+        }
         &_label {
             position: relative;
             margin-left: 50px;

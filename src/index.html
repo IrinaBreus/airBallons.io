@@ -10,6 +10,23 @@
 </head>
 <body>
 	<div class="container">
+        <div class="hamburger">
+            <input type="checkbox" class="hamburger__toggle" id="btn_hamburger">
+            <label for="btn_hamburger" class="hamburger__btn">
+                <span class="hamburger__icon"></span>
+            </label>
+            <div class="hamburger__bg"></div>
+            <nav class="hamburger__nav">
+                <ul class="hamburger__menu">
+                    <li class="hamburger__list"><a href="#about" class="hamburger__link">О НАС</a></li>
+                    <li class="hamburger__list"><a href="#adventure" class="hamburger__link">СКИДКИ</a></li>
+                    <li class="hamburger__list"><a href="#tours" class="hamburger__link">ЛУЧШИЕ ТУРЫ</a></li>
+                    <li class="hamburger__list"><a href="#book" class="hamburger__link">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+                    <li class="hamburger__list"><a href="#feedBack" class="hamburger__link">СВЯЗАТЬСЯ С НАМИ</a></li>
+                </ul>
+            </nav>
+        </div>
+         
 		<header class="header">
             <a href="#" class="header__logo">
                 <img src="icons/Icon-logo.svg" alt="logo">
@@ -24,7 +41,7 @@
 		</header>
 
         <main>
-            <section class="about">
+            <section class="about" id="about">
                 <h2 class="title title_grad">НЕВЕРОЯТНОЕ ОЩУЩЕНИЕ СВОБОДЫ</h2>
                 <div class="about__wrapper">                    
                     <div class="about__txt-block">
@@ -48,7 +65,7 @@
                 </div>
             </section>
 
-            <section class="adventure">
+            <section class="adventure" id="adventure">
                 <div class="adventure__wrapper">
                     <div class="adventure__cart">
                         <div class="adventure__cart-icon">
@@ -89,7 +106,7 @@
                 </div>
             </section> 
             
-            <section class="tours">
+            <section class="tours" id="tours">
                 <h2 class="title title_grad mb80">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
                 <div class="tours__wrapper">
                     <div class="tours-cart">
@@ -173,7 +190,7 @@
         </main>
 	</div>
 
-    <section class="feedBack">
+    <section class="feedBack" id="feedBack">
         <div class="bg-gradient"></div>
         <video class="bg-video" autoplay muted loop>
             <source src="img/video/balloons_1.mp4">
@@ -210,7 +227,7 @@
         </div>
     </section>
 
-    <section class="book">
+    <section class="book" id="book">
         <div class="book__wrapper">
             <div class="book__form">
                 <h2 class="title title_grad mb30 book__title">ЗАБРОНИРОВАТЬ ТУР</h2>
@@ -244,6 +261,19 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <a href="#" class="footer__logo">
+            <img src="./icons/Icon-logo.svg" alt="логотип">
+        </a>
+        <ul class="footer__menu">
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">СКИДКИ</a></li>
+            <li><a href="#">ЛУЧШИЕ ТУРЫ</a></li>
+            <li><a href="#">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+            <li><a href="#">СВЯЗАТЬСЯ С НАМИ</a></li>
+        </ul>
+    </footer>
 
     <script src="js/script.js"></script>
 

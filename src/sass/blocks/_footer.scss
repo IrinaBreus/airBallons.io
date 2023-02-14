@@ -1,0 +1,39 @@
+.footer {
+    background: #333333;
+    padding: 80px 100px;
+    &__logo {
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+            height: 151px;
+            margin-bottom: 30px;
+        }
+    }
+    &__menu {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            transition: all .3s;
+            a {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2px;
+                text-align: center;
+                color: var(--white);
+                text-decoration: none;
+                margin: 0 25px;
+                margin-top: 20px;
+            }
+            &:hover {
+                transform: scale(1.1) translateY(2px);
+                text-shadow: 0 0 0 white;
+            }
+        }
+    }
+}
