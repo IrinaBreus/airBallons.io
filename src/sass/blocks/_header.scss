@@ -5,10 +5,10 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     &__logo {
         position: absolute;
-        left: 5rem;
-        top: 5rem;
-        width: 5.6rem;
-        height: 7rem;
+        left: 50px;
+        top: 20px;
+        width: 56px;
+        height: 70px;
         animation: upDown 15s ease infinite;
         img {
             width: 100%;
@@ -30,8 +30,8 @@
         &_main {
             display: block;
             font-weight: 800;
-            font-size: 5rem;
-            line-height: 6rem;
+            font-size: 50px;
+            line-height: 60px;
             letter-spacing: 1rem;
             animation: leftToRight 2s ease-in-out 1s both;
             backface-visibility: hidden;
@@ -39,7 +39,7 @@
         &_descr {
             display: block;
             font-weight: 300;
-            font-size: 4rem;
+            font-size: 40px;
             line-height: 4.8rem;
             letter-spacing: 5px;
             margin-top: 2rem;
@@ -50,5 +50,36 @@
     }
     &__btn {
         animation: downToUp 2s ease-in-out 1s backwards;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        &__logo {
+            left: 3rem;
+        }
+        &__title {
+            &_main {
+                font-size: 46px;
+            }
+            &_descr {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        &__title {
+            &_main {
+                font-size: 36px;
+                letter-spacing: .8rem;
+            }
+            &_descr {
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@
             margin: 0 auto;
             width: 120px;
             height: 151px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
     }
     &__menu {
@@ -19,6 +19,7 @@
         li {
             list-style: none;
             transition: all .3s;
+            margin-top: 20px;
             a {
                 font-weight: 300;
                 font-size: 16px;
@@ -28,7 +29,6 @@
                 color: var(--white);
                 text-decoration: none;
                 margin: 0 25px;
-                margin-top: 20px;
             }
             &:hover {
                 transform: scale(1.1) translateY(2px);

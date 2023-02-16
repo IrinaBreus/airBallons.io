@@ -1,0 +1,36 @@
+.book {
+    background: var(--gradient-brown);
+    padding: 100px;
+    &__title {
+        text-align: left; 
+    }
+    &__wrapper {
+        background: linear-gradient(120deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 54%, rgba(195,149,106,0.1) 42%), url('../img/form_bg.jpg') center center/cover no-repeat;
+    }
+    &__form {
+        width: 80%;
+        padding: 50px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .book {
+        &__wrapper {
+            background: linear-gradient(100deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 75%, rgba(195,149,106,0.1) 42%), url('../img/form_bg.jpg') center center/cover no-repeat;
+        }
+        &__form {
+            width: 100%;
+            padding: 50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .book {
+        padding: 50px;
+        &__form {
+            padding-right: 0;
+        }
+    }
+}

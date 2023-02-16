@@ -128,7 +128,7 @@
 
 @media (max-width: 768px) {
     .tours {
-        padding: 70px 40px 75px 40px;
+        padding: 70px 20px 75px 20px;
         &__wrapper {
             margin-bottom: 60px;
         }
@@ -136,26 +136,37 @@
             perspective: none;
             &__side {
                 transition: none;
+                position: relative;
+                backface-visibility: hidden;
+                &_front {
+                    position: relative;
+                    min-height: 900px;
+                }
                 &_back {
-                    display: none;
+                    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+                    min-height: auto;
+                    transform: none;
+                    padding: 50px 0;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 480px;
                 }
             }
     
-            &__title {
-                font-weight: 300;
-                font-size: 22px;
-                line-height: 34px;
-                text-align: right;
-                letter-spacing: 2px;
-                color: #FFFFFF;
+            &__price {
+                margin-top: 60px;
+                margin-bottom: 57px;
+            }
+            &__value {
+                margin-bottom: 67px;
             }
     
             &:hover &__side_front {
-                transform: inherit;
+                transform: none;
             }
     
             &:hover &__side_back {
-                transform: inherit;
+                transform: none;
             }
         }
     }
