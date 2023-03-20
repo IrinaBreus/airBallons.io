@@ -57,6 +57,7 @@
     background: var(--brown-light);
     color: var(--white);
     margin-left: 0;
+    width: max-content;
     &::after {
         content: "";
         position: absolute;
@@ -96,5 +97,23 @@
         border-radius: 5px;
         box-shadow: var(--shadow);
         transform: translate(2px, 2px);
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 15px 20px;
+        letter-spacing: .2rem;
+    
+        
+        &:hover {
+            transform: none;
+            &::after {
+                transform: none;
+            }
+        }
+        &:active {
+            transform: none;
+        }
     }
 }

@@ -1,6 +1,7 @@
 .feedBack {
     padding: 80px 200px;
     position: relative;
+    z-index: 10;
     &__wrapper {
         display: grid;
         grid-template: repeat(3, auto) / 1fr;
@@ -107,7 +108,7 @@
                 font-size: 20px;
                 line-height: 29px;
                 text-align: left;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 color: var(--gray);
             }
             &__descr {
@@ -116,6 +117,32 @@
             &:hover img {
                 transform: none;
                 filter: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .feedBack {
+        padding: 40px 20px;
+        &__wrapper {
+            row-gap: 40px;
+        }
+        &-cart {
+            transform: skewX(0);
+            box-shadow: var(--shadow);
+            & > * {
+                transform: skewX(0);
+            }
+            &__name-hidde {
+                position: absolute;
+                top: 93%;
+                left: 40%;
+                font-size: 18px;
+                line-height: 29px;
+                text-align: right;
+                letter-spacing: 2px;
+                color: var(--gray);
             }
         }
     }

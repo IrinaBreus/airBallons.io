@@ -121,3 +121,48 @@
         top: 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        &__btn {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+        }
+        &__bg {
+            top: 31px;
+            right: 31px;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        &__link {
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        &__btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        &__bg {
+            top: 21px;
+            right: 21px;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        &__link {
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 38px;
+            letter-spacing: 1px;
+        }
+    }
+}

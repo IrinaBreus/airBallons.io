@@ -37,3 +37,35 @@
         }
     }
 }
+
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 80px 50px;
+        
+        &__menu {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 60px 20px;
+        &__menu {
+            width: 100%;
+            li {
+                list-style: none;
+                transition: all .3s;
+                margin-top: 20px;
+                a {
+                    letter-spacing: 1px;
+                }
+                &:hover {
+                    transform: none;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+}

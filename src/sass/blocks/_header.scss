@@ -83,3 +83,38 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        &__title {
+            &_main {
+                font-size: 30px;
+                letter-spacing: .6rem;
+            }
+            &_descr {
+                font-size: 26px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+        &__title {
+            margin-top: 50px;
+            &_main {
+                font-size: 28px;
+                letter-spacing: 5px;
+                line-height: 46px;
+            }
+            &_descr {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

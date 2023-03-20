@@ -17,20 +17,16 @@ body {
     background: #FFFFFF;
 }
 
-@media (max-width: 1024px) {
-    html {
-        font-size: 56.3%;
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
     }
+    
 }
 
-@media (max-width: 900px) {
-    html {
-        font-size: 50%;
+@media screen and (max-width: 576px) {
+    body {
+        padding: 0;
     }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 37.5%;
-    }
+    
 }
